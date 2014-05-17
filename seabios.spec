@@ -1,5 +1,5 @@
-Summary:	Open source implementation of a 16bit x86 BIOS
-Summary(pl.UTF-8):	Implementacja open source 16 bitowego BIOSu x86
+Summary:	Open source implementation of a 16-bit x86 BIOS
+Summary(pl.UTF-8):	Implementacja 16-bitowego BIOS-u x86 o otwartych źródłach
 Name:		seabios
 Version:	1.7.4
 Release:	1
@@ -14,11 +14,18 @@ URL:		http://seabios.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-SeaBIOS is an open source implementation of a 16bit X86 BIOS. SeaBIOS
+SeaBIOS is an open source implementation of a 16-bit X86 BIOS. SeaBIOS
 can run in an emulator or it can run natively on X86 hardware with the
 use of coreboot.
 
 SeaBIOS is the default BIOS for QEMU, KVM and Xen HVM.
+
+%description -l pl.UTF-8
+SeaBIOS to mająca otwarte źródła implementacją 16-bitowego BIOS-u X86.
+SeaBIOS może działać pod kontrolą emulatora lub natywnie na sprzęcie
+X86 przy użyciu bootloadera coreboot.
+
+SeaBIOS do domyślny BIOS dla narzędzi QEMU, KVM i Xen HVM.
 
 %prep
 %setup -q
