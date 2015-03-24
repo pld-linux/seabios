@@ -2,7 +2,7 @@ Summary:	Open source implementation of a 16-bit x86 BIOS
 Summary(pl.UTF-8):	Implementacja 16-bitowego BIOS-u x86 o otwartych źródłach
 Name:		seabios
 Version:	1.7.5
-Release:	1
+Release:	2
 License:	LGPL v3
 Group:		Applications/System
 Source0:	http://code.coreboot.org/p/seabios/downloads/get/%{name}-%{version}.tar.gz
