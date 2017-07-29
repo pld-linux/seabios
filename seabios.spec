@@ -1,14 +1,14 @@
 Summary:	Open source implementation of a 16-bit x86 BIOS
 Summary(pl.UTF-8):	Implementacja 16-bitowego BIOS-u x86 o otwartych źródłach
 Name:		seabios
-Version:	1.9.0
+Version:	1.10.2
 Release:	1
 License:	LGPL v3
 Group:		Applications/System
-#Source0Download: http://code.coreboot.org/p/seabios/downloads/
-Source0:	http://code.coreboot.org/p/seabios/downloads/get/%{name}-%{version}.tar.gz
-# Source0-md5:	c3fea87e731e396bd4e7e2c478ba39d9
-URL:		http://seabios.org/
+#Source0Download: https://code.coreboot.org/p/seabios/downloads/
+Source0:	https://code.coreboot.org/p/seabios/downloads/get/%{name}-%{version}.tar.gz
+# Source0-md5:	03387d3c84c7f43d6b8ab894155e1289
+URL:		https://www.seabios.org/SeaBIOS
 BuildRequires:	acpica
 %ifnarch %{ix86} %{x8664} x32
 # i386 crosscompiler could be used as well, but we have only x86_64 as more universal
@@ -47,7 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 install out/bios.bin $RPM_BUILD_ROOT%{_datadir}/%{name}/bios.bin
-install out/src/fw/*.aml $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,4 +56,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README docs/{Debugging.md,Mailinglist.md,Memory_Model.md,Releases.md,Runtime_config.md,SeaBIOS.md,SeaVGABIOS.md}
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/bios.bin
-%{_datadir}/%{name}/*.aml
