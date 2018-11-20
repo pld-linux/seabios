@@ -5,7 +5,6 @@ Version:	1.12.0
 Release:	1
 License:	LGPL v3
 Group:		Applications/System
-#Source0Download: https://code.coreboot.org/p/seabios/downloads/
 Source0:	https://www.seabios.org/downloads/%{name}-%{version}.tar.gz
 # Source0-md5:	2fd637b323d247a0948556104a2121c9
 URL:		https://www.seabios.org/SeaBIOS
