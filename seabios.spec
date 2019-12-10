@@ -1,12 +1,12 @@
 Summary:	Open source implementation of a 16-bit x86 BIOS
 Summary(pl.UTF-8):	Implementacja 16-bitowego BIOS-u x86 o otwartych źródłach
 Name:		seabios
-Version:	1.12.0
+Version:	1.13.0
 Release:	1
 License:	LGPL v3
 Group:		Applications/System
 Source0:	https://www.seabios.org/downloads/%{name}-%{version}.tar.gz
-# Source0-md5:	2fd637b323d247a0948556104a2121c9
+# Source0-md5:	1dc1725bac1d230bfd6b3204eed4f2f7
 URL:		https://www.seabios.org/SeaBIOS
 BuildRequires:	acpica
 %ifnarch %{ix86} %{x8664} x32
