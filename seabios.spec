@@ -2,7 +2,7 @@ Summary:	Open source implementation of a 16-bit x86 BIOS
 Summary(pl.UTF-8):	Implementacja 16-bitowego BIOS-u x86 o otwartych źródłach
 Name:		seabios
 Version:	1.14.0
-Release:	2
+Release:	3
 License:	LGPL v3
 Group:		Applications/System
 Source0:	https://www.seabios.org/downloads/%{name}-%{version}.tar.gz
@@ -15,8 +15,9 @@ BuildRequires:	crossx8664-binutils
 BuildRequires:	crossx8664-gcc
 %endif
 BuildRequires:	python
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_enable_debug_packages	0
 
 %description
 SeaBIOS is an open source implementation of a 16-bit X86 BIOS. SeaBIOS
