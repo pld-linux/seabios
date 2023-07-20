@@ -14,7 +14,7 @@ BuildRequires:	acpica
 BuildRequires:	crossx8664-binutils
 BuildRequires:	crossx8664-gcc
 %endif
-BuildRequires:	python
+BuildRequires:	python3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_enable_debug_packages	0
@@ -38,7 +38,7 @@ SeaBIOS to domyślny BIOS dla narzędzi QEMU, KVM i Xen HVM.
 
 %build
 %{__make} \
-	V=1 \
+	V=1 PYTHON=%{__python3} \
 %ifnarch %{ix86} %{x8664} x32
 	CROSS_PREFIX=x86_64-pld-linux
 %endif
